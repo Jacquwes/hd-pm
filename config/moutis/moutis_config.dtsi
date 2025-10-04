@@ -15,7 +15,7 @@
 #define EN_PRONOUN_COMBOS   // I, I'm, I've I'd I'll you've you'd your you're you'll etc.
 #define JP_MODE_ENABLE      // Add a JP layer,combos, etc.
 #define JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
-#define PERSONAL_MACROS "personal_macros.dtsi"
+#define PERSONAL_MACROS "moutis/personal_macros.dtsi"
 
 /*
  * global constants/configuration settings
