@@ -377,6 +377,7 @@
             bindings = <&kp DQT>;
 
             ak_DQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+            ak_DQT_gen { trigger-keys = <SQT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp S>; };
         };
         ak_SQT: ak_SQT {
             compatible = "zmk,behavior-adaptive-key";
@@ -393,10 +394,24 @@
             bindings = <&kp HASH>;
 
         ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S_INVX>; };
-        ak_HASH_b_Gratefully { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_Gratefully>; };
-        ak_HASH_b_Indiana { trigger-keys = <I>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_Indiana>; };
-        ak_HASH_b_University { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_University>; };
-        ak_HASH_b_Bloomington { trigger-keys = <B>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_Bloomington>; };
+#ifdef m_b_B
+        ak_HASH_b_B { trigger-keys = <B>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_B>; };
+#endif
+#ifdef m_b_G
+        ak_HASH_b_G { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_G>; };
+#endif
+#ifdef m_b_I
+        ak_HASH_b_I { trigger-keys = <I>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_I>; };
+#endif
+#ifdef m_b_T
+        ak_HASH_b_T { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_T>; };
+#endif
+#ifdef m_b_U
+        ak_HASH_b_U { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_U>; };
+#endif
+#ifdef m_b_V
+        ak_HASH_b_V { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_V>; };
+#endif
         };
 
 
