@@ -446,9 +446,6 @@
             #binding-cells = <0>;
             bindings = <&kp CMMA>;
             ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC  &caps_word>; };
-// optional alt fingering to eliminate SFBs in vowel block on HD Neu layout variations
-            ak_CMMA_O { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
-            ak_CMMA_E { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
         };
 
 /*
