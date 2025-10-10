@@ -39,7 +39,8 @@
             bindings = <&kp D>;
 
             akD_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(D)>; strict-modifiers; };
-            akD_t_l { trigger-keys = <J LS(J)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P &kp G>; strict-modifiers; };
+            akD_t_pg { trigger-keys = <J>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P &kp G>; strict-modifiers; };
+            akD_t_PG { trigger-keys = <LS(J)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp LS(P) &kp LS(G)>; strict-modifiers; };
         };
         ak_E: ak_E {
             compatible = "zmk,behavior-adaptive-key";
@@ -64,7 +65,7 @@
             bindings = <&kp G>;
 
             akG_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(G)>; strict-modifiers; };
-            akG_t_l  { trigger-keys = <K V LS(V)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
+            akG_t_l  { trigger-keys = <K LS(K) V LS(V)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
             akG_b_gl { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp G>; strict-modifiers; };
             akG_b_lml { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp M &kp L>; strict-modifiers; };
         };
@@ -100,9 +101,9 @@
  *
  */
             akJ_t_a { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; strict-modifiers; strict-modifiers; };
-            akJ_t_e { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; strict-modifiers; strict-modifiers; };
+            akJ_t_e { trigger-keys = <O LS(O)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; strict-modifiers; strict-modifiers; };
             akJ_t_o { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; strict-modifiers; strict-modifiers; };
-            akJ_t_u { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; strict-modifiers; };
+            akJ_t_u { trigger-keys = <A LS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; strict-modifiers; };
 
         };
         ak_K: ak_K {
