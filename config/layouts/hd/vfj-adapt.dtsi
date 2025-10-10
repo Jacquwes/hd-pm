@@ -64,7 +64,7 @@
             bindings = <&kp G>;
 
             akG_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(G)>; strict-modifiers; };
-            akG_t_l  { trigger-keys = <K V S(V)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
+            akG_t_l  { trigger-keys = <K V LS(V)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
             akG_b_gl { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp G>; strict-modifiers; };
             akG_b_lml { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp M &kp L>; strict-modifiers; };
         };
@@ -95,6 +95,7 @@
             bindings = <&kp J>;
 
             akJ_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(J)>; strict-modifiers; };
+            akJ_b_lv { trigger-keys = <D>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp V>; strict-modifiers; };
 /*
  * explore using J as a magic key like H for the four vowel SFBs
  *
