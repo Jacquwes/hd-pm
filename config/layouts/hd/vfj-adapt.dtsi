@@ -39,7 +39,7 @@
             bindings = <&kp D>;
 
             akD_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(D)>; strict-modifiers; };
-            akD_t_l { trigger-keys = <V>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
+            akD_t_l { trigger-keys = <J LS(J)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P &kp G>; strict-modifiers; };
         };
         ak_E: ak_E {
             compatible = "zmk,behavior-adaptive-key";
@@ -47,7 +47,7 @@
             bindings = <&kp E>;
 
             akE_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(E)>; strict-modifiers; };
-            akE_t_u { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
+            akE_t_u { trigger-keys = <A LS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
         };
         ak_F: ak_F {
             compatible = "zmk,behavior-adaptive-key";
@@ -77,9 +77,9 @@
             akH_t_a { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; strict-modifiers; };
             akH_t_e { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; strict-modifiers; };
             akH_t_l { trigger-keys = <N>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
-            akH_t_n { trigger-keys = <L M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; strict-modifiers; };
+            akH_t_n { trigger-keys = <L M LS(M)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; strict-modifiers; };
             akH_t_o { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; strict-modifiers; };
-//            akH_t_u { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
+//            akH_t_u { trigger-keys = <A LS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
             akH_t_sqt { trigger-keys = <Y>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp SQT>; strict-modifiers; };
         };
         ak_I: ak_I {
@@ -95,7 +95,6 @@
             bindings = <&kp J>;
 
             akJ_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(J)>; strict-modifiers; };
-            akJ_b_lv { trigger-keys = <D>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp V>; strict-modifiers; };
 /*
  * explore using J as a magic key like H for the four vowel SFBs
  *
@@ -112,7 +111,7 @@
             bindings = <&kp K>;
 
             akK_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(K)>; strict-modifiers; };
-            akK_b_lk { trigger-keys = <D G S(G)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp K>; strict-modifiers; };
+            akK_b_lk { trigger-keys = <D G LS(G)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp K>; strict-modifiers; };
             akK_b_ck { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp C &kp K>; strict-modifiers; };
         };
         ak_L: ak_L {
@@ -121,7 +120,7 @@
             bindings = <&kp L>;
 
             akL_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(L)>; strict-modifiers; };
-            akW_t_p { trigger-keys = <P>; max-prior-idle-ms = <my_ak_term>; bindings = <&sl_L>; strict-modifiers; };
+            akW_t_p { trigger-keys = <P LS(P)>; max-prior-idle-ms = <my_ak_term>; bindings = <&sl_L>; strict-modifiers; };
         };
         ak_M: ak_M {
             compatible = "zmk,behavior-adaptive-key";
@@ -129,7 +128,7 @@
             bindings = <&kp M>;
 
             akM_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(M)>; strict-modifiers; };
-            akM_t_l { trigger-keys = <G P X>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
+            akM_t_l { trigger-keys = <G LS(G) P X>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
             akM_b_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &sl_M>; strict-modifiers; };
         };
         ak_N: ak_N {
@@ -154,7 +153,7 @@
 
             akP_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(P)>; strict-modifiers; };
             akP_t_g { trigger-keys = <D>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp G>; strict-modifiers; };
-            akP_b_sp { trigger-keys = <F>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S &kp P>; strict-modifiers; };
+            akP_b_sp { trigger-keys = <F LS(F)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S &kp P>; strict-modifiers; };
         };
         ak_Q: ak_Q {
             compatible = "zmk,behavior-adaptive-key";
@@ -184,7 +183,7 @@
             bindings = <&kp T>;
 
             akT_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(T)>; strict-modifiers; };
-            akT_n  { trigger-keys = <K>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; strict-modifiers; };
+            akT_n  { trigger-keys = <K LS(K)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; strict-modifiers; };
         };
         ak_U: ak_U {
             compatible = "zmk,behavior-adaptive-key";
@@ -201,6 +200,7 @@
             akV_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(V)>; strict-modifiers; };
             akV_t_th { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp T &kp H>; strict-modifiers; strict-modifiers; };
             akV_t_l { trigger-keys = <M W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; strict-modifiers; };
+            akJ_b_lv { trigger-keys = <X>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp V>; strict-modifiers; };
         };
         ak_W: ak_W {
             compatible = "zmk,behavior-adaptive-key";
