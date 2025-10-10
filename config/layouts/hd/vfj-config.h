@@ -8,7 +8,7 @@
  */
 #pragma once
 
-#define HD_LAYOUT vfj        // HD variation 2 letter code from handsdown.h
+#define HD_LAYOUT vfj        // HD variation 2+ letter code from handsdown.h
 #include "handsdown.h"      // load header now for HD common defs
 
 #define _______  &trans

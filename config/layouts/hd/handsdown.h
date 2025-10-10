@@ -9,7 +9,7 @@
  *
  *  which HD alpha variation are we using?
  *
- *  nu = neu (no thumb alpha)    * RSNT does not use thumb
+ *  neu = neu (no thumb alpha)   * RSNT does not use thumb
  *  au = gold (T on thumb)       * RSND most inward rolling
  *  ag = silver (L on thumb)     * RSNT LOW sfbs, but high repeat on thumb
  *  bz = bronze (H on thumb)     * RSNT lightest thumb use w/H-digraph combos
