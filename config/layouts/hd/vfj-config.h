@@ -8,7 +8,7 @@
  */
 #pragma once
 
-#define HD_LAYOUT vf        // HD variation 2 letter code from handsdown.h
+#define HD_LAYOUT vfj        // HD variation 2 letter code from handsdown.h
 #include "handsdown.h"      // load header now for HD common defs
 
 #define _______  &trans
@@ -23,7 +23,7 @@
             ╰──────────╯ ╰───────────╯
 */
 
-#define HD_Layer_label "HD-Vf"
+#define HD_Layer_label "HD-Vfj"
 #define HD_LT &ak_X           &ak_W           &ak_M           &ak_G           &ak_V
 #define HD_LM &mt_S LCTRL S   &mt_C LALT C    &mt_N LGUI N    &mt_T LSHFT T   &ak_K
 #define HD_LB &ak_F           &ak_P           &ak_L           &ak_D           &ak_J

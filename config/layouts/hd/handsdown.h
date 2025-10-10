@@ -19,6 +19,7 @@
  *  rh = rhodium (R on thumb)    * SCNT typically doesn't require H-digraph combos
  *  ti = titanium (R on thumb)   * SCNT predecessor to vibranium. Better pinky balance.
  *  vf = vibranium (R on thumb, f in lower left, b on right) - SCNT "canonical" best overall V#
+ *  vfj = vibranium (R on thumb, f in lower left, b on right) - SCNT "canonical" V-J swapped for a "magic-J"
  *  vv = vibranium (R on thumb, v in lower left, f on right) - SCNT lowest SFBs, more inner column/scissors
  *  vx = vibranium (R on thumb, x in lower left, f on right) - SCNT best pinky balancing, more inner column/scissors
  *  vb = vibranium (R on thumb, b in lower left, f on right) - CSNT good pinky, mb is a problem
