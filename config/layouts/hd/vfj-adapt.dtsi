@@ -64,7 +64,7 @@
             bindings = <&kp G>;
 
             akG_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(G)>; strict-modifiers; };
-            akG_t_pg { trigger-keys = <J>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P &kp G>; strict-modifiers; };
+            akG_t_pg { trigger-keys = <V>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P &kp G>; strict-modifiers; };
             akG_t_l  { trigger-keys = <K>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
             akG_b_gl { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp G>; strict-modifiers; };
             akG_b_lml { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp M &kp L>; strict-modifiers; };
