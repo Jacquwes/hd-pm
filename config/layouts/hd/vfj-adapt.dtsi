@@ -40,7 +40,7 @@
 
             akD_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(D)>; strict-modifiers; };
             akD_t_pg { trigger-keys = <J>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P &kp G>; strict-modifiers; };
-            akD_t_PG { trigger-keys = <LS(J) RS(J)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp LS(P) &kp LS(G)>; strict-modifiers; };
+            akD_t_JPG { trigger-keys = <LS(J) RS(J)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp LS(P) &kp LS(G)>; strict-modifiers; };
         };
         ak_E: ak_E {
             compatible = "zmk,behavior-adaptive-key";
@@ -155,7 +155,7 @@
             akP_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(P)>; strict-modifiers; };
             akP_t_g { trigger-keys = <D>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp G>; strict-modifiers; };
             akP_b_sp { trigger-keys = <F>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S &kp P>; strict-modifiers; };
-            akP_b_SP { trigger-keys = <LS(F) RS(F)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(S) &kp P>; strict-modifiers; };
+            akP_b_S_P { trigger-keys = <LS(F) RS(F)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(S) &kp P>; strict-modifiers; };
         };
         ak_Q: ak_Q {
             compatible = "zmk,behavior-adaptive-key";
