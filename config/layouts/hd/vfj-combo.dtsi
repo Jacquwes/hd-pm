@@ -78,7 +78,7 @@ COMBO_LAYER(pnWhere,    &t_PnWhere, LT4 LH1, l_hd)  // "Where "
 
 #ifdef JP_MODE_ENABLE      // JP layer combos, etc.
 COMBO_LAYER(jp_t_Q,     &kp Q,      LT3 LT1, l_jp)  // type Q
-COMBO_LAYER(jp_t_J,     &kp J,      LM2 LM3, l_jp)  // type J
+COMBO_LAYER(jp_t_J,     &kp J,      LM3 LM1, l_jp)  // type J
 COMBO_LAYER(jp_t_dash,  &kp MINUS,  LM2 LM1, l_jp)  // type -
 COMBO_LAYER(jp_t_sokuonn,  &t_sokuonn,  LB3 LB1, l_jp)  // type -
 COMBO_LAYER(jp_t_wo,    &t_wo,      LT3 LT2, l_jp)  // を
