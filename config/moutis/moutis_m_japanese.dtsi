@@ -15,6 +15,10 @@
         bindings = <&macro_tap &kp N &kp N>
                 ;
         )
+    ZMK_MACRO(t_sokuonn,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp X &kp T &kp U>;
+        )
     ZMK_MACRO(t_wo,
         tap-ms = <my_tapping_speed>;
         bindings = <&kp W &kp O>;
