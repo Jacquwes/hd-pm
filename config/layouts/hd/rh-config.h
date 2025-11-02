@@ -34,14 +34,14 @@
 #define HD_RB &MinusPlus      &ak_U           &ak_O           &ak_Y           &ak_W
 #define HD_RH &lt l_sym SPACE &lt l_nav RETURN
 
-// Japanese "mode" (no adaptives, & L, C, X not used so repurpose to ん, Z, -)
+// Japanese "mode" (no adaptives, & C, J, L, X not used so repurpose to Z, っ, ん, -)
 #define JP_Layer_label "HD-JP"
 #define JP_LT &lk_LRbkt         &kp G           &kp M         &kp P         &kp RBKT
 #define JP_LM &hml RCTRL Z    &hml RALT S     &hml RGUI N     &hml RSHFT T    &kp K
 #define JP_LB &kp P           &kp F           &t_nn           &kp D           &kp V
 #define JP_LH                                                 _______         &lt l_nav R
 
-#define JP_RT _______         &DotColnJ       &SlshStarJ      &kp J           &kp MINUS
+#define JP_RT _______         &DotColnJ       &SlshStarJ      &kp X           &kp MINUS    // x for ぁぃぅぇぉゃゅょ…
 #define JP_RM _______         &hmr LSHFT A    &hmr LGUI E     &hmr LALT I     &hmr LCTRL M
 #define JP_RB _______         &kp U           &kp O           &kp Y           &kp W
 #define JP_RH _______         _______
@@ -53,7 +53,7 @@
 #define DOT_LB _______        _______         _______         _______         _______
 #define DOT_LH                                                _______         _______
 
-#define DOT_RT &kp DLLR       &kp DOT         &t_dotcom       &t_dotedu       &t_dotorg
+#define DOT_RT &t_dotorg      &kp DOT         &t_dotcom       _______         &t_dotedu
 #define DOT_RM &caps_word     _______         _______         _______         _______
 #define DOT_RB _______        _______         _______         _______         _______
 #define DOT_RH _______        _______
