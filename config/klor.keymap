@@ -23,7 +23,6 @@
 };
 
 / {
-/ {
   chosen {
     zmk,matrix_transform = &saegewerk_transform;
   };
