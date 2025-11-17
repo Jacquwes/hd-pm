@@ -29,6 +29,18 @@
             label = "T_PAIRDQUO";
             tap-ms = <40>;
         };
+        t_pairDquo: t_pairSquo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT &kp LALT &kp RALT &kp LCTRL &kp RCTRL &kp LEFT_WIN &kp RWIN>,
+                <&macro_tap>,
+                <&kp SINGLE_QUOTES &kp SINGLE_QUOTES &kp LEFT>;
+
+            label = "T_PAIRSQUO";
+            tap-ms = <40>;
+        };
     };
 
     behaviors {
