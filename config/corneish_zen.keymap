@@ -102,6 +102,50 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+    #define hold_tap_config \
+            compatible = "zmk,behavior-hold-tap"; \
+            #binding-cells = <2>; \
+            tapping-term-ms = <200>; \
+            flavor = "tap-preferred"
+        
+        DoubleQuotesLt: DoubleQuotesLt {
+            hold_tap_config;
+            bindings = <&pairDquoLt>, <&DquotLt>;
+        };
+
+        pairDquoLt: pairDquoLt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&t_pairDquo>, <&t_pairLtGt>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        DquotLt: DquotLt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        SingleQuoteGt: SingleQuoteGt {
+            hold_tap_config;
+            bindings = <&pairSquoGt>, <&SquotGT>
+        };
+
+        pairSquoGt: pairSquoGt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&t_pairSquo>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        SquotGT: SquotGT {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -109,9 +153,9 @@
 
         base {
             bindings = <
-  &kp F  &kp P  &kp D          &kp L  &kp X      &HashDllr   &DotColn   &SlshStar  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
-  &kp S  &kp N  &kp T          &kp H  &kp K      &kp COMMA   &kp A      &kp E      &kp I              &kp C
-  &kp V  &kp W  &kp G          &kp M  &kp J      &MinusPlus  &kp U      &kp O      &kp Y              &kp B
+  &kp F  &kp P  &kp D          &kp L  &kp X      &HashDllr   &DotColn   &SlshStar  &DoubleQuotesLt  &SingleQuoteGt
+  &kp S  &kp N  &kp T          &kp H  &kp K      &kp COMMA   &kp A      &kp E      &kp I            &kp C
+  &kp V  &kp W  &kp G          &kp M  &kp J      &MinusPlus  &kp U      &kp O      &kp Y            &kp B
                 &kp BACKSPACE  &kp R  &kp DEL    &kp BSPC    &kp SPACE  &kp RET
             >;
         };
