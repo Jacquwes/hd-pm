@@ -16,15 +16,77 @@
         zmk,matrix_transform = &five_column_transform;
     };
 
+    macros {
+        t_pairDquo: t_pairDquo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT &kp LALT &kp RALT &kp LCTRL &kp RCTRL &kp LEFT_WIN &kp RWIN>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
+
+            label = "T_PAIRDQUO";
+            tap-ms = <40>;
+        };
+    };
+
+    behaviors {
+        DotColn: DotColn {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOTCOLN";
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        SlshStar: SlshStar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLSHSTAR";
+            bindings = <&SlshBslh>, <&kp STAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        SlshBslh: SlshBslh {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLSHBSLH";
+            bindings = <&kp FSLH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RSFT)>;
+        };
+
+        HashDllr: HashDllr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HASHDLLR";
+            bindings = <&kp HASH>, <&kp DOLLAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        MinusPlus: MinusPlus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MINUSPLUS";
+            bindings = <&kp MINUS>, <&kp PLUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-  &kp F  &kp P  &kp D  &kp L  &kp X      &kp SEMI   &kp U      &kp O    &kp Y      &kp B
-  &kp S  &kp N  &kp T  &kp H  &kp K      &kp COMMA  &kp A      &kp E    &kp I      &kp C
-  &kp V  &kp W  &kp G  &kp M  &kp J      &kp MINUS  &kp DOT    &kp SQT  &kp EQUAL  &kp SLASH
-                &kp Z  &kp R  &kp DEL    &kp BSPC   &kp SPACE  &kp Q
+  &kp F  &kp P  &kp D          &kp L  &kp X      &HashDllr   &DotColn   &SlshStar  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
+  &kp S  &kp N  &kp T          &kp H  &kp K      &kp COMMA   &kp A      &kp E      &kp I              &kp C
+  &kp V  &kp W  &kp G          &kp M  &kp J      &MinusPlus  &kp U      &kp O      &kp Y              &kp B
+                &kp BACKSPACE  &kp R  &kp DEL    &kp BSPC    &kp SPACE  &kp RET
             >;
         };
     };
